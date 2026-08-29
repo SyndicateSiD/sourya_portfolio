@@ -48,7 +48,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 2.0, ease: [0.22, 1, 0.36, 1] }}
       className="fixed inset-0 z-[999] bg-[#FFFDF8] flex flex-col items-center justify-between p-6 sm:p-12 text-[#292524] select-none overflow-hidden"
     >
       {/* Subtle Background Radial Glow */}
@@ -133,12 +133,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         <div className="flex items-center gap-3">
           <span className="flex items-center gap-1.5 text-[#292524] font-medium">
             <span className="w-1.5 h-1.5 rounded-full bg-[#86EFAC]" />
-            KIIT (8.81 CGPA)
+            Coforge
           </span>
-          <span>•</span>
-          <span>Coforge QA</span>
-          <span>•</span>
-          <span>Taylor &amp; Francis / Springer Published</span>
+          
         </div>
 
         <div className="text-[#78716C]">
